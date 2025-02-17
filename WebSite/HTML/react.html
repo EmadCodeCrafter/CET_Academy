@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/WebSite/CSS/nav.css">
+    <link rel="stylesheet" href="/WebSite/CSS/Courses.css">
+
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>نعلم react</title>
+</head>
+<body>
+
+    <nav>
+        <div class="links">
+            <a href="/WebSite/HTML/Index.html"> <img src="/WebSite/Matrial/CET_Academy.png" alt="png"></a>
+            <a href="/WebSite/HTML/Index.html">الرئيسية</a>
+            <a href="/WebSite/HTML/Tracks.html">مسارات</a>
+            <a href="/WebSite/HTML/Index.html#3">دورات</a>
+            <a href="/WebSite/HTML/Index.html#4">الاستشارات</a>
+            <a href="/WebSite/HTML/about.html">حول الموقع</a>
+        </div>
+        <div class="reg">
+            
+            <button class="Login"><a href="/WebSite/HTML/Login.html">دخول</a></button>
+            <button class="Create"><a href="/WebSite/HTML/CreateAccoun.html">إنشاء حساب</a></button>
+        </div>
+        
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">☰</label>
+
+        </div>
+    </nav>
+    <header>
+         <div class="header-text">
+            <div class="header-title"> 
+
+                <h3>Learn ReactJS from scratch
+                </h3>
+            <h2>مسار الدليل الشامل لتعلم react من الصفر</h2>
+
+</div>
+            <p>تعلم أشهر مكتبات الجافا سكريبت لبناء واجهات المستخدم، واستعد لتصبح مطور فرونت اند محترف قادر على بناء مواقع وتطبيقات ويب تفاعلية وقوية. React هي المكتبة المثالية لمطوري الواجهة الأمامية، والتي تساعدهم على إنشاء عناصر تفاعلية لمواقع وتطبيقات الويب، ويستخدمها العديد من المواقع الشهيرة مثل Netflix و Facebook. هذا المسار مخصص لك إذا كنت تريد تعلم React من الصفر</p>
+            <a href="#2" class="Header-Btn">شاهد الأن</a>
+        </div>
+
+        <iframe aria-controls="aria-controls" src="https://www.youtube.com/embed/CHUbZQJBfpE?si=AVbDQ1kRRNVdDSAy"" frameborder=""></iframe>
+      
+    </header>
+    
+    <main>
+
+        <div class="WhatULearn">
+            <img src="/WebSite/Matrial/education.webp" alt="">
+            <div>
+                <h2>ماذا ستتعلم في هذا المسار؟</h2>
+                <p>
+                    ستتعلم في هذا المسار معظم المهارات الهامة التي تحتاجها لإتقان مكتبة ريأكت وبناء مواقع وتطبيقات ويب احترافية من بيئة العمل الواقعية. ستبدأ بدورة React Fundamentals، حيث ستتعرف على مفاهيم ريأكت الأساسية، مثل components وغيرها، ثم سنتدرج معًا لتتعلم مواضيع أكثر تقدمًا مثل الصفحات المتعددة، واستخدام تقنيات تطوير وتحسينات الأداء، وغيرهم الكثير، وستطبق كل ما تعلمته في مشروع عملي يتضمن بناء تطبيق لمتابعة السعرات الحرارية (calorie tracker)، وننهي المسار بدورة تطبيقية كاملة ستبني فيها بنفسك 3 مشاريع احترافية تستطيع إضافتها لمعرض أعمالك (Portfolio)؛ مما يُكسبك خبرة عملية ويعزز فهمك لمكتبة React؛ ويساعدك على المنافسة في سوق العمل بين باقي المبرمجين.
+</p>
+            </div>
+        </div>
+
+
+        <div id="2" class="CourseContent">
+            <h2>محتوى الكورس</h2>
+            <iframe class="CourseIframe" aria-controls="aria-controls" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=M79F_pgWoarbTUYL" frameborder=""></iframe>
+
+        </div>
+
+    </main>
+
+    <script>
+        // العثور على مربع الاختيار
+        const menuToggle = document.getElementById("menu-toggle");
+        
+        // إضافة مستمع لحدث التغيير لتبديل حالة القائمة
+        menuToggle.addEventListener("change", function() {
+            const links = document.querySelector(".links");
+            if (menuToggle.checked) {
+                links.style.display = "flex"; // عرض القائمة
+            } else {
+                links.style.display = "none"; // إخفاء القائمة
+            }
+        });
+    </script>
+     <footer>
+        &copy; 2025 جميع الحقوق محفوظة
+    </footer>
+</body>
+</html>

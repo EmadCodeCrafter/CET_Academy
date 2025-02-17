@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: 'Noto Kufi Arabic', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+
+header{
+    width: 90%;
+    height: 600px;
+    background:  #1b2631;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+iframe{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+
+.header-text{
+    width: 100%;
+    max-width: 600px; /* التأكد من أن العرض لا يتجاوز 530px */
+    font-size: clamp(14px, 3vw, 18px); /* 3vw يجعل الحجم مرنًا بين 14px و 18px */
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.header-text h2{
+    margin-top: 0px;
+}
+.header-text h3{
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight:normal;
+    color:   #67b8db;
+}
+
+@media (max-width: 768px) {
+    header{
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+
+    
+   
+    
+}
+
+.Header-Btn
+{
+    background-color:  #67b8db;
+    color: white;
+    border: none;
+    border-radius:18px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Noto Kufi Arabic', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    
+}
+
+.WhatULearn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.WhatULearn img{
+width: 200px;
+}
+.WhatULearn p{
+width: 100%;
+max-width: 500px;
+}
+
+.WhatULearn h2{
+   color:  #4e95b3;
+}
+
+
+
+
+.Course-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.CourseIframe{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+
+
+/* Media Query for small devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin-top: 30px;
+        gap: 30px;
+        
+    }
+    header p {
+        width: 100%;
+        max-width: 530px;
+        font-size: clamp(14px, 3vw, 18px);
+        text-align: center; /* محاذاة النص في الوسط */
+    }
+
+    .WhatULearn {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+        padding-top: 30px;
+    }
+    .CourseIframe{
+        display: flex;
+        width: 50%;
+        margin: auto;
+        height: 200px;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .CourseIframe {
+        width:auto;
+        height: auto;
+    }
+
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2%;
+    width: 100%;
+}
