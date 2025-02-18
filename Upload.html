@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل محتوى</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        fieldset {
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        .img {
+            width: 100px;
+            display: block;
+            margin: 10px auto;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .inputs, .Course_Type, textarea {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+            text-align: center;
+        }
+
+        .custom-file-upload:hover {
+            background-color: #0056b3;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .accept {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .accept label {
+            cursor: pointer;
+        }
+
+        .Upload {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 80%;
+            margin-top: 10px;
+        }
+        .Upload:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="#">
+        <fieldset>
+            <legend>تحميل محتوى</legend>
+            <a href="index.html">
+                <img src="CET_Academy.png" class="img" alt="شعار الأكاديمية">
+            </a>
+
+            <div class="info">
+                <input type="text" name="lesson_title" placeholder="عنوان الدرس" required class="inputs">
+                <input type="text" name="lesson_number" placeholder="رقم الدرس" required class="inputs">
+
+                <label for="fileInput" class="custom-file-upload">اختر ملفًا</label>
+                <input type="file" id="fileInput" name="file">
+                <span id="file-name" style="font-size: 14px; color: #555;"></span>
+
+                <select name="Course_Type" class="Course_Type">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+
+                <textarea name="Caption" placeholder="وصف الدرس"></textarea>
+            </div>
+            <button type="submit" class="Upload">إضافة</button>
+        </fieldset>
+    </form>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function () {
+            let fileName = this.files.length ? this.files[0].name : "لم يتم اختيار ملف";
+            document.getElementById('file-name').textContent = fileName;
+        });
+    </script>
+
+</body>
+</html>

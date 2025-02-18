@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Courses.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>تعلم JavaScript</title>
+</head>
+<body>
+
+    <nav>
+        <div class="links">
+            <a href="index.html"> <img src="CET_Academy.png" alt="png"></a>
+            <a href="index.html">الرئيسية</a>
+            <a href="Tracks.html">مسارات</a>
+            <a href="index.html#3">دورات</a>
+            <a href="index.html#4">الاستشارات</a>
+
+            <a href="about.html">حول الموقع</a>
+        </div>
+        <div class="reg">
+            
+            <button class="Login"><a href="Login.html">دخول</a></button>
+            <button class="Create"><a href="CreateAccoun.html">إنشاء حساب</a></button>
+        </div>
+
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">☰</label>
+
+        </div>
+
+    </nav>
+    <header>
+         <div class="header-text">
+            <div class="header-title"> 
+
+                <h3>JavaScript from Zero to Hero
+                </h3>
+            <h2>مسار تعلم JavaScript من الصفر حتى الاحتراف</h2>
+
+</div>
+            <p>تعلم لغة البرمجة الأشهر في العالم واستعد للعمل في مجالات برمجية متعددة بدءًا من تطوير مواقع الويب وتطبيقات سطح المكتب، إلى الذكاء الاصطناعي وإنترنت الأشياء، وغيرهم الكثير. هذا المسار يأخذ بيدك من الصفر لتصبح مطور جافا سكريبت محترف.</p>
+            <a href="#2" class="Header-Btn">شاهد الأن</a>
+        </div>
+
+        <iframe aria-controls="aria-controls" src="https://www.youtube.com/embed/CHUbZQJBfpE?si=AVbDQ1kRRNVdDSAy"" frameborder=""></iframe>
+      
+    </header>
+    
+    <main>
+
+        <div class="WhatULearn">
+            <img src="education.webp" alt="">
+            <div>
+                <h2>ماذا ستتعلم في هذا المسار؟</h2>
+                <p>
+                    ستبدأ هذا المسار بتعلم أساسيات جافا سكريبت مثل Variables، و Functions، وDOM، ثم سنكمل على هذه الأساسيات لننتقل بمستواك من مستوى المبرمج المبتدئ إلى مستوى المبرمج المتوسط من خلال تعلم مواضيع أكثر تقدمًا مثل Events، وLooping، وLogic and Flow Control وغيرهم، وبعدها سنطبق عمليًا على 3 مشاريع حقيقة، ثم سننتقل بك بعد ذلك إلى مواضيع أكثر تقدمًا وتعقيدًا مثل Object Oriented Programming with JavaScript وAdvanced Flow Control وغيرهم الكثير من المفاهيم التي ستساعدك على بناء تطبيقات جافا سكريبت بطريقة أكثر احترافية</p>
+            </div>
+        </div>
+
+
+        <div id="2" class="CourseContent">
+            <h2>محتوى الكورس</h2>
+            <iframe class="CourseIframe" aria-controls="aria-controls" src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=M79F_pgWoarbTUYL" frameborder=""></iframe>
+
+        </div>
+
+    </main>
+
+    <script>
+        // العثور على مربع الاختيار
+        const menuToggle = document.getElementById("menu-toggle");
+        
+        // إضافة مستمع لحدث التغيير لتبديل حالة القائمة
+        menuToggle.addEventListener("change", function() {
+            const links = document.querySelector(".links");
+            if (menuToggle.checked) {
+                links.style.display = "flex"; // عرض القائمة
+            } else {
+                links.style.display = "none"; // إخفاء القائمة
+            }
+        });
+    </script>
+     <footer>
+        &copy; 2025 جميع الحقوق محفوظة
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Tracks.css">
+    <title>المسارات</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="links">
+            <a href="index.html"> <img src="CET_Academy.png" alt="png"></a>
+            <a href="index.html">الرئيسية</a>
+            <a href="Tracks.html">مسارات</a>
+            <a href="index.html#3">دورات</a>
+            <a href="index.html#4">الاستشارات</a>
+            <a href="about.html">حول الموقع</a>
+        </div>
+        <div class="reg">
+            <button class="Login"><a href="Login.html">دخول</a></button>
+            <button class="Create"><a href="CreateAccoun.html">إنشاء حساب</a></button>
+        </div>
+
+        <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">☰</label>
+
+        </div>
+
+    </nav>
+    <header>
+       
+        <p>
+
+            مساراتنا التعليمية تم إعدادها بعناية عن طريق أفضل المبرمجين الذين يعملون في كبرى الشركات العالمية كجوجل وأمازون وبخبرات تتجاوز 11 عام، وقد راعينا كل ما يتطلبه سوق العمل لفهم وتعلم البرمجة من الصفر وحتى المستويات المتقدمة. تضم مسارات المدرسة معظم جوانب البرمجة من أول مسار تعليم البرمجة الأطفال وأساسيات البرمجة وحتى المواد التخصصية كالخوارزميات وهياكل البيانات وحل المشكلات وتطوير الواجهة الأمامية (Frontend) والواجهة الخلفية (Backend) وغيرهم من المسارات المتجددة.
+
+<br>اضغط على المسار المناسب لك من التالي، وتعرف أكثر عنه!
+
+
+        </p>
+         <img src="Header.svg" alt="">
+    </header>
+
+    <main>
+
+        <a href="HtmlCssPage.html">
+                <div class="Content">
+                    <h2>مسار بناء مواقع ويب تفاعلية ومتجاوبة باستخدام HTML وCSS</h2>   
+                       
+            <p>
+    <hr>  
+            الطلب على مطوري مواقع الويب في ازدياد؛ فلا يوجد صاحب منتج إلا وله موقع ويب يستخدمه للتواصل مع عملائه. ستتعلم تصميم وبناء مواقع ويب احترافية ومتجاوبة، وستكتسبك بعض المهارات الهامة للاستعداد والتحضير للعمل في مجال الواجهة الأمامية. 
+         
+             </p>
+                  </div>
+        <img src="HtmlCss.png" alt="">
+    
+    </a>
+
+    <a href="js.html">
+        <div class="Content">
+            <h2>مسـار تعلم JavaScript من الصفر وحتى الاحتراف</h2>   
+               
+    <p>
+<hr>  
+تعلم لغة البرمجة الأشهر في العالم واستعد للعمل في مجالات برمجية متعددة أهمها تطوير مواقع وتطبيقات الويب. هذا المسار يأخذ بيدك من الصفر لتصبح مطور جافا سكريبت محترف. 
+ 
+     </p>
+          </div>
+<img src="JavaScript frameworks-rafiki.svg" alt="">
+
+</a>
+
+
+<a href="react.html">
+    <div class="Content">
+        <h2>مسار الدليل الشامل لتعلم ReactJS من الصفر</h2>   
+           
+<p>
+<hr>  
+تعلم أشهر مكتبات لغة جافا سكريبت من الصفر، واستعد لتصبح مطور فرونت اند محترف قادر على بناء مواقع وتطبيقات ويب احترافية من خلال التطبيق على مشاريع الحقيقية. بتعلمك وإنهائك لهذا المسار ستكون مستعدًا للتقديم على وظائف في مجال الفرونت إند. 
+ </p>
+      </div>
+<img src="Reactjs.png" alt="">
+
+</a>
+     
+  
+    </main>
+    <script>
+        // العثور على مربع الاختيار
+        const menuToggle = document.getElementById("menu-toggle");
+        
+        // إضافة مستمع لحدث التغيير لتبديل حالة القائمة
+        menuToggle.addEventListener("change", function() {
+            const links = document.querySelector(".links");
+            if (menuToggle.checked) {
+                links.style.display = "flex"; // عرض القائمة
+            } else {
+                links.style.display = "none"; // إخفاء القائمة
+            }
+        });
+    </script>
+     <footer>
+        &copy; 2025 جميع الحقوق محفوظة
+    </footer>
+</body>
+</html>
