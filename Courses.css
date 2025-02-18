@@ -45,6 +45,26 @@ iframe{
     font-weight:normal;
     color:   #67b8db;
 }
+.clock{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 2px solid ;
+    border-radius: 50%;
+    animation: clock 10s linear infinite;
+
+}
+/* .clock hr{
+    height: 35%;
+}
+@keyframes clock{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
 
 @media (max-width: 768px) {
     header{
